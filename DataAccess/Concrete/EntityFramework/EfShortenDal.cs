@@ -14,12 +14,5 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfShortenDal : EfEntityRepositoryBase<ShortenUrl, TinytrUrlShortenContext>, IShortenDal
     {
-        public IList<string> GetShortUrlList()
-        {
-            using (TinytrUrlShortenContext context = new TinytrUrlShortenContext())
-            {
-                return context.ShortenUrls.Select(x => x.ShortUrl).ToList();
-            }
-        }
     }
 }

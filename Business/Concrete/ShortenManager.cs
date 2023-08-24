@@ -83,7 +83,7 @@ namespace Business.Concrete
         {
             const string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             string uniqueUrl = string.Empty;
-            var shortUrlList = _shortenDal.GetShortUrlList();
+            var shortUrlList = _shortenDal.GetList().Select(x=>x.ShortUrl).ToList();
             do
             {
                 uniqueUrl = new string(Enumerable.Repeat(chars, length)

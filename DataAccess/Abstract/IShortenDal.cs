@@ -12,6 +12,5 @@ namespace DataAccess.Abstract
 {
     public interface IShortenDal : IEntityRepository<ShortenUrl>
     {
-        public IList<string> GetShortUrlList();
     }
 }
