@@ -28,5 +28,5 @@ Follow these steps to set up the project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/dadasovmurad/shortlink-api.git
-   cd shortlink-api
+   git clone https://github.com/dadasovmurad/tinyrt-url-shorten-backend.git
+   cd tinyrt-url-shorten-backend
