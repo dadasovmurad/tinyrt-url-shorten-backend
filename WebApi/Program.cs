@@ -35,10 +35,10 @@ namespace WebApi
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.UseCors(builder => builder
- .AllowAnyHeader()
- .AllowAnyMethod()
- .SetIsOriginAllowed((host) => true)
- .AllowCredentials());
+                                  .AllowAnyHeader()
+                                  .AllowAnyMethod()
+                                  .SetIsOriginAllowed((host) => true)
+                                  .AllowCredentials());
             app.ConfigureCustomExceptionMiddleware();
             app.MapControllers();
 
